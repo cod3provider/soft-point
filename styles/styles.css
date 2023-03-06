@@ -1,0 +1,56 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-links {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.text-div {
+    width: 510px;
+}
+
+.hero-title {
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.hero-title-span {
+    background: linear-gradient(154.24deg, #3EFFC0 4.45%, #18CA90 83.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.hero-text {
+    font-size: 21px;
+    color: #021206;
+    opacity: 0.7;
+}
+
+.hero-text-span {
+    font-weight: 500;
+}
+
+.hero-text-input {
+    position: relative;
+    width: 470px;
+    padding: 20px 6px 20px 25px;
+
+}
+
+.hero-input-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
