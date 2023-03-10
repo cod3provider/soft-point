@@ -7,33 +7,48 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="./styles/styles.css">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-		<title>Document</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+		      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="./styles/styles.css">
+		<title>Soft Point</title>
 	</head>
 	<body>
 		<header>
-			<nav class="main-nav">
-				<a href="#">Logo</a>
-				<ul class="main-links">
-					<li>
-						<a href="">Feature</a>
-					</li>
+			<div class="container">
+				<nav class="nav">
+					<!--<div>-->
+					<a class="logo" href="#">
+						<div class="logo__div logo__div--outer">
+							<div class="logo__div logo__div--inner"></div>
+						</div>
+						<p class="logo__text">
+							S<span class="logo__text--span">o</span>ft
+							p<span class="logo__text--span">o</span>int
+						</p>
+					</a>
+					<!--</div>-->
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="#">Feature</a>
+						</li>
 
-					<li>
-						<a href="">Download</a>
-					</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Download</a>
+						</li>
 
-					<li>
-						<a href="">Pricing</a>
-					</li>
-				</ul>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Pricing</a>
+						</li>
+					</ul>
 
-				<div>
-					<a href="">Login</a>
-					<a href="">Sign up</a>
-				</div>
-			</nav>
+					<div class="auth">
+						<a class="auth__link" href="#">Login</a>
+						<a class="auth__link auth__link--color" href="#">Sign up</a>
+					</div>
+				</nav>
+			</div>
 		</header>
 
 		<main>
@@ -43,7 +58,7 @@
 					<p class="hero-text">Pushing the possibilities of the internet. Good for
 						the last software. <span class="hero-text-span">Make it A software night.</span>
 					</p>
-					<form>
+					<form class="form">
 						<input class="hero-text-input" type="email" placeholder="Enter your email">
 						<button class="hero-input-button" type="submit">Send</button>
 					</form>

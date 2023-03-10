@@ -1,19 +1,145 @@
-html {
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
-.main-nav {
-    display: flex;
-    justify-content: space-between;
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
-.main-links {
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 220px 100px;
+}
+
+.nav__list {
     display: flex;
     width: 300px;
     justify-content: space-between;
 }
 
+
+.nav__link {
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #021206;
+    opacity: .5;
+    transition: all 250ms linear;
+}
+
+.nav__link:hover {
+    color: #000;
+    opacity: 1;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #24DC9F;
+}
+
+.logo__div {
+    position: relative;
+
+    border-radius: 50px;
+}
+
+.logo__div--outer {
+    width: 26px;
+    height: 26px;
+    margin-right: 6px;
+
+    background: linear-gradient(176.15deg, #8EE7CA 19.68%, #2FEEAF 96.85%);
+    box-shadow: 0px 4px 70px rgba(155, 215, 195, 0.8);
+}
+
+.logo__div--inner {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #F9FEFC;
+    box-shadow: 0px 1px 1px rgba(5, 31, 23, 0.2);
+}
+
+.logo__text--span {
+    position: relative;
+}
+
+.logo__text--span::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 13px;
+    left: -2px;
+
+    background: #FEDF8B;
+    box-shadow: -4px 1px 80px rgba(246, 216, 135, 0.7);
+    border-radius: 56px;
+    transform: rotate(-49.66deg);
+}
+
+.auth__link {
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #021206;
+    opacity: 0.7;
+    transition: all 250ms linear;
+}
+
+.auth__link:hover {
+    color: #000;
+    opacity: 1;
+}
+
+.auth__link:not(:last-child) {
+    margin-right: 25px;
+}
+
+.auth__link--color {
+    padding: 15px 30px;
+
+    color: #FFFFFF;
+    background: #F44545;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+/* Hero */
 .text-div {
     width: 510px;
 }
@@ -43,7 +169,7 @@ html {
 
 .hero-text-input {
     position: relative;
-    width: 470px;
+    width: 100%;
     padding: 20px 6px 20px 25px;
 
 }
@@ -53,4 +179,12 @@ html {
     top: 0;
     right: 0;
     z-index: 2;
+    padding: 10px 30px;
+    width: 120px;
+}
+
+
+.form {
+    position: relative;
+    width: 100%;
 }
