@@ -260,3 +260,23 @@ body {
     border-radius: 56px;
     z-index: -1;
 }
+
+
+/*        Companies       */
+
+.companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    padding: 53px 225px;
+    max-width: 100%;
+
+    background: rgba(142, 230, 201, 0.1);
+}
+
+@media screen and (max-width: 1199px) {
+    .companies {
+        flex-direction: column;
+    }
+}
