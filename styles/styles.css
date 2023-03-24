@@ -219,6 +219,11 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: color 250ms linear;
+}
+
+.hero__form--button:hover {
+    color: #000;
 }
 
 .hero__stores {
@@ -279,4 +284,129 @@ body {
     .companies {
         flex-direction: column;
     }
+}
+
+
+/*    SKILlS     */
+
+.skills {
+    display: flex;
+    gap: 30px;
+}
+
+.skills__left {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    gap: 30px;
+}
+
+.skills__info {
+    padding: 30px;
+    width: 280px;
+    height: 290px;
+
+    border: 1px solid rgba(2, 18, 6, 0.1);
+    border-radius: 10px;
+    transition: all 250ms linear;
+}
+
+.skills__info:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 65px rgba(65, 77, 68, 0.15);
+}
+
+.skills__image {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.skills__image--red {
+    background: linear-gradient(141.58deg, #FF9A9A 3.63%, #F14C4C 91.45%);
+}
+
+.skills__image--green {
+    background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+}
+
+.skills__image--yellow {
+    background: linear-gradient(163.65deg, #FCD876 4.69%, #FABC13 88.66%);
+}
+
+.skills__image--pink {
+    background: linear-gradient(143.75deg, #FE9AF4 0%, #EC4EDC 88.72%);
+}
+
+.skills__title {
+    margin-top: 25px;
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #021206;
+    opacity: 0.8;
+}
+
+.skills__text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #021206;
+    opacity: 0.7;
+}
+
+.skills__right {
+    width: 550px;
+}
+
+.skills__main-title {
+    font-size: 45px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.skills__text--size {
+    font-size: 18px;
+}
+
+.skills__text--margin-top {
+    margin-top: 20px;
+}
+
+.skills__text--span {
+    font-weight: 600;
+}
+
+.skills__button {
+    padding: 15px 40px;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    background: #282323;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+
+.skills__button:hover {
+    background: #F44545;
+    color: #000;
+}
+
+.skills__link {
+    margin-left: 25px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #FF4D4D;
+    transition: color 250ms linear;
+}
+
+.skills__link:hover {
+    color: #000;
 }
