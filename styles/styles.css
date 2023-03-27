@@ -311,7 +311,7 @@ body {
 
 .skills__info:hover {
     background: #FFFFFF;
-    box-shadow: 0px 15px 65px rgba(65, 77, 68, 0.15);
+    box-shadow: 0 15px 65px rgba(65, 77, 68, 0.15);
 }
 
 .skills__image {
@@ -493,4 +493,50 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     width: 50%;
+}
+
+
+/*        -------SOFTWARE-------        */
+
+.software {
+    position: relative;
+    display: flex;
+    padding: 90px 220px;
+    background: rgba(142, 230, 201, 0.1);
+    max-width: 100%;
+    background: rgba(142, 230, 201, 0.1);
+}
+
+.software__left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 480px;
+}
+
+.software__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #021206;
+    opacity: 0.7;
+}
+
+.software__button {
+    padding: 15px 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    background: #F44545;
+    border-radius: 5px;
+    border: none;
+}
+
+.software__image {
+    position: absolute;
+    right: -60px;
+    top: -75px;
+    width: 800px;
+    height: 550px;
 }
