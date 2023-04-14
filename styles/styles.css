@@ -272,7 +272,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 75px;
-    padding: 53px 225px;
+    padding: 53px;
     max-width: 100%;
 
     background: rgba(142, 230, 201, 0.1);
@@ -456,6 +456,9 @@ body {
 
 
 /*        --------INFO----------       */
+.section--padding-bottom {
+    padding-bottom: 110px;
+}
 
 .info {
     display: flex;
@@ -499,9 +502,12 @@ body {
 /*        -------SOFTWARE-------        */
 
 .software {
-    /*display: flex;*/
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
     /*position: relative;*/
-    padding: 90px 120px;
+    /*padding: 90px 120px;*/
     max-width: 100%;
     background: rgba(142, 230, 201, 0.1);
 }
@@ -541,9 +547,33 @@ body {
 .software__image {
     position: absolute;
     right: -85px;
-    bottom: 20px;
-    width: 800px;
+    bottom: 0px;
+    width: 700px;
     height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .software__image {
+        right: -85px;
+        bottom: -75px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .software {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .software__image {
+        max-width: 800px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .software__image {
+        width: 800px;
+    }
 }
 
 
