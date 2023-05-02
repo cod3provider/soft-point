@@ -38,6 +38,9 @@ body {
     padding-top: 110px;
 }
 
+
+/*          --------------HEADER--------------           */
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -52,7 +55,6 @@ body {
     width: 300px;
     justify-content: space-between;
 }
-
 
 .nav__link {
     padding: 15px 0;
@@ -278,12 +280,6 @@ body {
     background: rgba(142, 230, 201, 0.1);
 }
 
-@media screen and (max-width: 1199px) {
-    .companies {
-        flex-direction: column;
-    }
-}
-
 
 /*    -------SKILlS-------     */
 
@@ -440,7 +436,6 @@ body {
     width: 590px;
 }
 
-
 .feature__right::before {
     content: '';
     position: absolute;
@@ -470,6 +465,7 @@ body {
     width: 50%;
 }
 
+
 .info__left::before {
     content: '';
     position: absolute;
@@ -481,7 +477,10 @@ body {
     box-shadow: -4px 1px 80px rgba(246, 216, 135, 0.7);
     border-radius: 100px;
     z-index: -1;
+
+
 }
+
 
 .info__text {
     font-weight: 400;
@@ -547,33 +546,9 @@ body {
 .software__image {
     position: absolute;
     right: -85px;
-    bottom: 0px;
+    bottom: 0;
     width: 700px;
     height: auto;
-}
-
-@media screen and (min-width: 1200px) {
-    .software__image {
-        right: -85px;
-        bottom: -75px;
-    }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1199px) {
-    .software {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .software__image {
-        max-width: 800px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .software__image {
-        width: 800px;
-    }
 }
 
 
